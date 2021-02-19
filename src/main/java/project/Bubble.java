@@ -19,7 +19,7 @@ public class Bubble {
 
     public boolean burst() {
 
-        System.out.print("Cramp!");
+        System.out.println("Cramp!");
 
         return false;
     }
