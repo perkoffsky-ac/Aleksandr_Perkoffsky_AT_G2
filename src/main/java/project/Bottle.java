@@ -14,8 +14,8 @@ public class Bottle {
     }
 
 
-    public void open() {
-        this.water.open(); //открыли бутылку
+    public void setOpen() {
+        this.water.setOpen(); //открыли бутылку
     }
 
     private Bubble[] getBubbbles() {
@@ -45,6 +45,5 @@ public class Bottle {
         this.water = water;
         return water;
     }
-
 
 }

@@ -37,7 +37,7 @@ public class SparklingWater extends Water {
 
     }
 
-    public void open() {
+    public void setOpen() {
         this.isClosed = false;       //закрыта или нет
     }
 
@@ -48,14 +48,13 @@ public class SparklingWater extends Water {
     private void degus() {
 
         if (this.bubbles != null) {
-            for (int i = 0; i < this.bubbles.length; i++) { //лопает пузырьки, но не удаляет из массива (удалить)
-                this.bubbles[0].burst();
+            for (int i = 0; i < this.bubbles.length; i++) { //лопает пузырьки
+
+                int bubbles = this.temperature*5 + 10; //
+                System.out.println(this.bubbles[i].burst());
+
             }
 
-            /*while (this.bubbles.length > 0) {
-                this.bubbles[0].burst();
-                //сделать удаление 0-го элемента из массива ???????????
-            }*/
         }
     }
 

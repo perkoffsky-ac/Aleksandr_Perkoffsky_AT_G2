@@ -6,9 +6,9 @@ public class Runner {
         Bottle bottle1 = new Bottle(0.5, sparklingWater);
         Bottle bottle2 = new Bottle(1, sparklingWater);
         Bottle bottle3 = new Bottle(1.5, sparklingWater);
-        bottle1.open();
-        bottle2.open();
-        bottle3.open();
+        bottle1.setOpen();
+        bottle2.setOpen();
+        bottle3.setOpen();
     }
 
 }
