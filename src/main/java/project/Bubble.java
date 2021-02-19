@@ -17,9 +17,11 @@ public class Bubble {
         this.getVolume(Bubble.volume);
     }
 
-    public void burst() {
+    public boolean burst() {
 
         System.out.print("Cramp!");
+
+        return false;
     }
 
 }
