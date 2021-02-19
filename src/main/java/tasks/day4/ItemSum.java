@@ -18,7 +18,7 @@ public class ItemSum {
 
         for (i = 0; i < array.length; i++) {
 
-            if(i % n == 0)
+            if(array[i] % n == 0)
 
             array[i] = random.nextInt(55);
             int sum = array[i];
