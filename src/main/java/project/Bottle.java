@@ -3,16 +3,19 @@ package main.java.project;
 public class Bottle {
 
     private double volume;
-    private SparklingWater sparklingWater;
+    private SparklingWater water;
+    private int temperature;
 
-    public Bottle(double volume, SparklingWater sparklingWater) {
+    public Bottle(double volume, SparklingWater water) {
         this.volume = volume;
-        this.sparklingWater = sparklingWater;
-        this.sparklingWater.pump(this.getBubbbles());
+        this.water = water;
+        this.water.pump(this.getBubbbles());
+
     }
 
+
     public void open() {
-        this.sparklingWater.open(); //открыли бутылку
+        this.water.open(); //открыли бутылку
     }
 
     private Bubble[] getBubbbles() {
@@ -24,5 +27,24 @@ public class Bottle {
         }
         return array;
     }
+
+    public void warm (int temperature) {
+        this.temperature = temperature;
+        SparklingWater sparklingWater = new SparklingWater(this.temperature()); //установка температуры
+    }
+
+    private int temperature() {
+        return 40;
+    }
+
+    public void setWater(SparklingWater water) {
+        this.water = water;
+    }
+
+    public SparklingWater getWater() {
+        this.water = water;
+        return water;
+    }
+
 
 }

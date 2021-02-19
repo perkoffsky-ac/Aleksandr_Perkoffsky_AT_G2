@@ -7,12 +7,12 @@ public abstract class Water {
     private String smell;
     private int temperature;
 
-    protected Water(String color, double transparency, String smell, int temperature) {
-        this.color = color;
-        this.transparency = transparency;
-        this.smell = smell;
+    protected Water(int temperature) {
         this.temperature = temperature;
     }
 
+    public Water() {
+
+    }
 }
 
