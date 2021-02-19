@@ -23,7 +23,7 @@ public class Bottle {
         System.out.println(count);
         Bubble[] array = new Bubble[(int)count]; //тип дабл привели к типу инт
         for (int i = 0; i < array.length; i++) {
-            array[i] = new Bubble(0.2);
+            array[i] = new Bubble("carbonDioxide");
         }
         return array;
     }
