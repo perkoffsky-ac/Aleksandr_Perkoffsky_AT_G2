@@ -8,8 +8,8 @@ public class SparklingWater extends Water {
     private boolean isClosed;
     private Bubble[] bubbles;
 
-    protected SparklingWater(String color, double transparency, String smell, int temperature) {
-        super(color, transparency, smell, temperature);
+    protected SparklingWater(int temperature) {
+        super(temperature);
         this.isClosed = true;
 
         Timer timer = new Timer();
@@ -26,6 +26,10 @@ public class SparklingWater extends Water {
             }
         }, 0, 2);
 
+    }
+
+    public SparklingWater() {
+        super();
     }
 
     public void pump(Bubble[] bubbles) {
