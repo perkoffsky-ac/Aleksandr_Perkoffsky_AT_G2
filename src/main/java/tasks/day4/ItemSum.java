@@ -12,7 +12,7 @@ public class ItemSum {
 
     static void foo() {
         int n = 7;
-        int i = 888;
+        int i = 5;
         int[] array = new int[i];
         Random random = new Random();
 
@@ -21,9 +21,9 @@ public class ItemSum {
             if(array[i] % n == 0)
 
             array[i] = random.nextInt(55);
-            int sum = array[i];
+            int sum = 0;
 
-            sum = sum + array[i];
+            sum+=array[i];
 
             System.out.print(" " + sum + " ");
 
