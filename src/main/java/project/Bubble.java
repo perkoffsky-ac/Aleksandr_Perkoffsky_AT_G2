@@ -5,23 +5,17 @@ public class Bubble {
     private static double volume = 0.3;
     private String gas;
 
-    public Bubble(String gas) {
-        this.gas = gas;
+    public Bubble(String gas) {             //передаем в конструктор строку с названием газа пузырька
+        this.gas = gas;                     //ссылка на теккущий объект
     }
 
-    public Bubble() {
-
-    }
-
-    public void getVolume(double volume){
+    public void getVolume(double volume) {  //метод, возвращающий обьем пузырька
         this.getVolume(Bubble.volume);
     }
 
-    public boolean burst() {
+    public void burst() {
+        System.out.print("Cramp!");
 
-        System.out.println("Cramp!");
-
-        return false;
     }
 
 }
