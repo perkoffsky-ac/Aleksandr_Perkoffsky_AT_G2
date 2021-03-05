@@ -48,5 +48,9 @@ public abstract class Water implements Transformable {
         this.temperature = temperature;
     }
 
+    @Override
+    public void mix() {
+
+    }
 }
 

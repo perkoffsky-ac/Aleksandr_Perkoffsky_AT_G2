@@ -4,24 +4,25 @@ public interface Containable {
 
     Transformable[] array = new Transformable[5];
     int counter = 0;
-
+/*
     default void addStuff(Transformable stuff) {
-        array[counter++] = stuff;
+        array[++counter] = stuff;
     }
 
     default Transformable removeStuff() {
         Transformable transformable = array[counter - 1];
         array[counter--] = null;
         return transformable;
-    }
+    }*/
 
     default boolean isEmpty() {
         return counter == 0;
     }
 
-    default int getFreeSpace(); {
-
+    default int getFreeSpace() {
+        return 0;
     }
+
 
     default void open() {
 
@@ -30,5 +31,6 @@ public interface Containable {
     default void close() {
 
     }
+
 }
 
