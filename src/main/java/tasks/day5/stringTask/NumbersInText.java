@@ -10,7 +10,6 @@ public class NumbersInText {
         for (char i : chars) {
             if (Character.isDigit(i)) {
                 builder.append(i);
-
                 System.out.println(i);
             }
 
