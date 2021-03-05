@@ -31,15 +31,15 @@ public class Runner {
         bottle2.open();
         bottle3.open();
 
-        Containable container = new Containable();
-
-        for (int i = 0; i < 5; i++) {
+        Containable container = new Bottle(0.5, 0.7, 2, glass);
+/*
+        for (int i = 0; i < 10; i++) {
             container.addStuff(i);
-            container.addStuff(sand);
+            container.addStuff(water);
         }
         while (!container.isEmpty()) {
             Transformable transformable = container.removeStuff();
-        }
+        }*/
     }
 /*
         oos.writeObject(bottle3);
