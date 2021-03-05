@@ -1,6 +1,8 @@
-package main.java.project;
+package main.java.project.Including;
 
-public class Bubble {
+import java.io.Serializable;
+
+public class Bubble implements Serializable {
 
     private static double volume = 0.3;
     private String gas;

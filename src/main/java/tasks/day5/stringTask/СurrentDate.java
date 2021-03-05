@@ -1,11 +1,8 @@
 package main.java.tasks.day5.stringTask;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
-import static java.util.GregorianCalendar.*;
 
 public class СurrentDate {
 

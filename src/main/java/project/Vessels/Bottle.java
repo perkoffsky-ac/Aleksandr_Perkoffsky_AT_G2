@@ -1,20 +1,27 @@
-package main.java.project;
+package main.java.project.Vessels;
 
-public class Bottle {
+import main.java.project.Interfaces.Containable;
+import main.java.project.Including.Bubble;
+import main.java.project.Materials.Material;
+import main.java.project.Substance.SparklingWater;
 
-    private static double volume;
+public class Bottle extends Vessel implements Containable {
+
     private SparklingWater water;
     private int temperature;
 
-    public Bottle(double volume, SparklingWater water) {
+    public Bottle(double volume, double diameter, int weight, Material material) {
+        super(volume, diameter, weight, material);
         this.volume = volume;
         this.water = water;
+    }
+
+    public void pumpBubbles() {
         this.water.pump(this.getBubbles());
     }
 
     public void open() {
         this.water.setOpened(true); //открыли бутылку
-
     }
 
     private Bubble[] getBubbles() {
@@ -29,7 +36,6 @@ public class Bottle {
 
     public void warm(int temperature) {
         this.temperature = temperature;
-
     }
 
     public SparklingWater getWater() {
@@ -38,9 +44,7 @@ public class Bottle {
 
     public void setWater(SparklingWater water) {
         this.water = water;
-
     }
-
 }
 
 
