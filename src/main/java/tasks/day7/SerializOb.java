@@ -3,7 +3,7 @@ package main.java.tasks.day7;
 import java.io.*;
 import java.util.Date;
 
-/*
+
 public class SerializOb {
 
     public static void main(String[] args) throws IOException {
@@ -17,4 +17,4 @@ public class SerializOb {
 
     }
 }
-*/
+
