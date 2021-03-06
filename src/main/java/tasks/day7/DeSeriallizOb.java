@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.Date;
 
-/*public class DeSeriallizOb {
+public class DeSeriallizOb {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         FileInputStream fis = new FileInputStream("t.tmp");
         ObjectInputStream oos = new ObjectInputStream(fis);
@@ -16,4 +16,4 @@ import java.util.Date;
         Date date = (Date) ois.readObject();
         ois.close();
     }
-}*/
+}

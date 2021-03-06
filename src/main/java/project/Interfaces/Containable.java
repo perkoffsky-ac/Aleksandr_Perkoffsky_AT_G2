@@ -4,7 +4,7 @@ public interface Containable {
 
     Transformable[] array = new Transformable[5];
     int counter = 0;
-/*
+
     default void addStuff(Transformable stuff) {
         array[++counter] = stuff;
     }
@@ -13,7 +13,7 @@ public interface Containable {
         Transformable transformable = array[counter - 1];
         array[counter--] = null;
         return transformable;
-    }*/
+    }
 
     default boolean isEmpty() {
         return counter == 0;

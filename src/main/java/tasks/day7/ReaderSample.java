@@ -12,21 +12,21 @@ public class ReaderSample {
             String incoming = scanner.nextLine();
             System.out.println("Lust got '%s', incoming");*/
 
-       /* read();*/
-        write();
+       read();
+        /*write();*/
     }
 
-    /*public static void read() throws Exception {
+    public static void read() throws Exception {
 
-        BufferedReader in = new BufferedReader(new FileReader("file.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("C:/Users/perko/Desktop/AT_G2/Aleksandr_Perkoffsky_AT_G2/F1/F2/F3/F4/a.txt"));
         String line;
         while ((line = in.readLine()) != null) {
             System.out.println(line);
         }
         in.close();
-    }*/
+    }
 
-    public static void write()  {
+    /*public static void write()  {
 
         BufferedWriter out = null;
         try {
@@ -50,7 +50,7 @@ public class ReaderSample {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 }
 
 
