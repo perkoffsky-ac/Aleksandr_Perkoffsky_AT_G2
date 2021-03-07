@@ -55,9 +55,9 @@ public class LogTask {
             return accessDeniedCounter;
         }
 
-        public void increaseAccessDeniedCounter() {
+       /* public void increaseAccessDeniedCounter() {
             this.accessDeniedCounter += 1;
-        }
+        }*/
     }
 }
 
