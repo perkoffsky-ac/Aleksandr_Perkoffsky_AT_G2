@@ -1,11 +1,10 @@
-package main.java.project.Substance;
+package main.java.project.substance;
 
-import main.java.project.Including.Bubble;
+import main.java.project.including.Bubble;
 
 import java.io.Serializable;
 import java.util.Arrays;
 import java.lang.Thread;
-
 
 public class SparklingWater extends Water implements Serializable {
 
@@ -15,7 +14,6 @@ public class SparklingWater extends Water implements Serializable {
     public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
     }
-
     private void checkIsOpened() {
 
         Thread thread = new Thread() {
@@ -37,22 +35,17 @@ public class SparklingWater extends Water implements Serializable {
             }
         };
         thread.start();
-
     }
-
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
     }
-
     public boolean setOpened(boolean isOpened) {
         this.isOpened = true;       //закрыта или нет
         return isOpened;
     }
-
     private boolean isOpened() {
         return true;
     }
-
     private void degas() {
         int bubbles = this.temperature * 5 + 10; //партия пузырьков зависящая от температуры
 
@@ -72,7 +65,6 @@ public class SparklingWater extends Water implements Serializable {
             //длина нового массива = длина оригинального массива - кол-во пузырьков в партии
         }
     }
-
     public boolean isSparkle() {
         return this.bubbles != null && this.bubbles.length > 0;
         //возвращает true если в воде еще есть пузырьки газа
