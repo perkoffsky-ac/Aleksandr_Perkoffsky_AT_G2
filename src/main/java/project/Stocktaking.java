@@ -8,7 +8,7 @@ import main.java.project.vesselsTypes.VesselBox;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
-public class Stocktaking extends Warehouse {
+public class Stocktaking {
 
     public static void main(String[] args) throws Exception {
         FileOutputStream fos = new FileOutputStream("VesselBox.txt");

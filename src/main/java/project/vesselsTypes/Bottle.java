@@ -13,12 +13,14 @@ import java.util.List;
 public class Bottle extends Vessel implements Containable, Serializable {
 
     private List<Transformable> stuff = new ArrayList<>();
-    private SparklingWater water;
     private int temperature;
+    SparklingWater water = new SparklingWater("no", "transparent", "no", 40);
 
     public Bottle(double volume, double diameter, int weight, Material material) {
         super(volume, diameter, weight, material);
         this.volume = volume;
+        pumpBubbles();
+
     }
 
     public Bottle() {
