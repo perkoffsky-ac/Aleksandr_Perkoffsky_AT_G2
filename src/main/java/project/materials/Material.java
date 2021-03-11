@@ -1,4 +1,4 @@
-package main.java.project.Materials;
+package main.java.project.materials;
 
 public abstract class Material {
 

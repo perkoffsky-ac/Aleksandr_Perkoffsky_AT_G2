@@ -1,6 +1,6 @@
-package main.java.project.Vessels;
+package main.java.project.vesselsTypes;
 
-import main.java.project.Materials.Material;
+import main.java.project.materials.Material;
 
 public abstract class Vessel {
 
