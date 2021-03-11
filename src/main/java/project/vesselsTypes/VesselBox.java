@@ -22,6 +22,6 @@ public class VesselBox<T extends Vessel> {
             System.out.print(vessel.getClass().getName().replaceAll("main.java.project.vesselsTypes.",
                     "") + " ");
         }
-        System.out.println();5555555555
+        System.out.println();
     }
 }
