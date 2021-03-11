@@ -40,14 +40,14 @@ public class SparklingWater extends Water implements Serializable {
         this.bubbles = bubbles;
     }
     public boolean setOpened(boolean isOpened) {
-        this.isOpened = true;       //закрыта или нет
+        this.isOpened = true;                                            //закрыта или нет
         return isOpened;
     }
     private boolean isOpened() {
         return true;
     }
     private void degas() {
-        int bubbles = this.temperature * 5 + 10; //партия пузырьков зависящая от температуры
+        int bubbles = this.temperature * 5 + 10;                         //партия пузырьков зависящая от температуры
 
         while (this.bubbles != null && this.bubbles.length > 0) {
             int currLength = this.bubbles.length;

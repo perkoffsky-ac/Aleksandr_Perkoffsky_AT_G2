@@ -7,7 +7,7 @@ import java.util.Date;
 public class SerializOb {
 
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos = new FileOutputStream("t.tmp");
+        FileOutputStream fos = new FileOutputStream("t.txt");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeInt(12345);
         oos.writeObject("Today");
