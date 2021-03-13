@@ -31,14 +31,15 @@ public class Bottle extends Vessel implements Containable, Serializable {
         this.water.pump(this.getBubbles());
     }
 
-    private Bubble[] getBubbles() {
-        double count = volume * 10000; //кол-во пузырьков в зависимости от объема volume
+    private List<Bubble> getBubbles() {
+        double count = volume * 10000;
         System.out.println(count);
-        Bubble[] array = new Bubble[(int) count]; //тип дабл привели к типу инт
-        for (int i = 0; i < array.length; i++) {
-            array[i] = new Bubble("carbonDioxide");
+        List<Bubble> bubbleList = new ArrayList<>((int) count);
+        int bound = bubbleList.size();
+        for (int i = 0; i < bound; i++) {
+            bubbleList.set(i, new Bubble("carbonDioxide"));
         }
-        return array;
+        return bubbleList;
     }
 
     public void warm(int temperature) {

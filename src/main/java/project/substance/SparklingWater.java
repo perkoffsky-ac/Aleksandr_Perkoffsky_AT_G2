@@ -3,13 +3,13 @@ package main.java.project.substance;
 import main.java.project.including.Bubble;
 
 import java.io.Serializable;
-import java.util.Arrays;
-import java.lang.Thread;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SparklingWater extends Water implements Serializable {
 
     private boolean isOpened;
-    private Bubble[] bubbles;
+    private List<Bubble> bubbles = new ArrayList<>();
 
     public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
@@ -37,42 +37,32 @@ public class SparklingWater extends Water implements Serializable {
         };
         thread.start();
     }
-
-    public void pump(Bubble[] bubbles) {
+    public void pump(List<Bubble> bubbles) {
         this.bubbles = bubbles;
     }
-
     public void setOpened(boolean isOpened) {
-        this.isOpened = isOpened;                                            //закрыта или нет
+        this.isOpened = isOpened;
         isOpened();
     }
-
     private void isOpened() {
         checkIsOpened();
-        }
-
+    }
     private void degas() {
-        int bubbles = this.temperature * 5 + 10;                         //партия пузырьков зависящая от температуры
-
-        while (this.bubbles != null && this.bubbles.length > 0) {
-            int currLength = this.bubbles.length;
-            if (currLength < bubbles) {
-                //если осталось пузырьков меньше чем размер партии
-                bubbles = currLength;
+        int bubbles = this.temperature * 5 + 10;
+        while (this.bubbles != null && this.bubbles.size() > 0) {
+            int currSize = this.bubbles.size();
+            if (currSize < bubbles) {
+                bubbles = currSize;
             }
             for (int i = 0; i < bubbles; i++) {
-                //лопает пузырьки партиями (каждая партитя от 0 до bubbles)
-                int index = currLength - i - 1;
-                this.bubbles[index].burst(); // i = 0 - 1 (если партия 210, то index = 209...)
+                int index = currSize - i - 1;
+                this.bubbles.get(index).burst();
             }
-            this.bubbles = Arrays.copyOf(this.bubbles, currLength - bubbles);
-            //содаю новый массив из копии старого
-            //длина нового массива = длина оригинального массива - кол-во пузырьков в партии
+            this.bubbles = new ArrayList(currSize - bubbles);
+            isSparkle();
         }
     }
-
     public boolean isSparkle() {
-        return this.bubbles != null && this.bubbles.length > 0;
-        //возвращает true если в воде еще есть пузырьки газа
+        return this.bubbles != null && this.bubbles.size() > 0;
     }
 }
