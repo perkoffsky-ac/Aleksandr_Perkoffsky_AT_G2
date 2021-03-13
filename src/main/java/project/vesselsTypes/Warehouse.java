@@ -1,9 +1,6 @@
-package main.java.project;
+package main.java.project.vesselsTypes;
 
-import main.java.project.vesselsTypes.Bottle;
-import main.java.project.vesselsTypes.Cup;
-import main.java.project.vesselsTypes.Vessel;
-import main.java.project.vesselsTypes.VesselBox;
+import main.java.project.Stocktaking;
 
 public class Warehouse {
 
