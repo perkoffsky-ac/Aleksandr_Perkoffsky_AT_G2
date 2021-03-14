@@ -46,7 +46,7 @@ public class Bottle extends Vessel implements Containable, Serializable {
         this.temperature = temperature;
     }
 
-   public SparklingWater getWater() {
+    public SparklingWater getWater() {
         return water;
     }
 
@@ -54,26 +54,27 @@ public class Bottle extends Vessel implements Containable, Serializable {
         this.water = water;
     }
 
+    @Override
     public void addStuff(Transformable stuff) {
         this.stuff.add(stuff);
     }
-
+    @Override
     public Transformable removeStuff() {
         return null;
     }
-
+    @Override
     public boolean isEmpty() {
         return stuff.isEmpty();
     }
-
+    @Override
     public int getFreeSpace() {
         return (int) getVolume() * 1000 - stuff.size();
     }
-
+    @Override
     public void open() {
         this.water.setOpened(true); //открыли бутылку
     }
-
+    @Override
     public void close() {
         this.water.setOpened(false);
     }
