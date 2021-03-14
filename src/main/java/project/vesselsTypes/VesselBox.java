@@ -1,9 +1,10 @@
 package main.java.project.vesselsTypes;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VesselBox<T extends Vessel> {
+public class VesselBox<T extends Vessel> implements Serializable {
 
     public VesselBox(T vessel, int boxQuantity) throws Exception {
 
@@ -19,8 +20,7 @@ public class VesselBox<T extends Vessel> {
     private void printContentsBox(List<T> vessels) {
 
         for (T vessel : vessels) {
-            System.out.print(vessel.getClass().getName().replaceAll("main.java.project.vesselsTypes.",
-                    "") + " ");
+            System.out.print(vessel.getClass().getSimpleName() + " ");
         }
         System.out.println();
     }
