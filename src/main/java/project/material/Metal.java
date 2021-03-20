@@ -1,4 +1,4 @@
-package main.java.project.materials;
+package main.java.project.material;
 
 public class Metal extends Material{
 

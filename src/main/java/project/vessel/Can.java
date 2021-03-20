@@ -1,16 +1,16 @@
-package main.java.project.vesselsTypes;
+package main.java.project.vessel;
 
-import main.java.project.materials.Glass;
-import main.java.project.materials.Material;
-import main.java.project.substance.Transformable;
+import main.java.project.material.Material;
+import main.java.project.material.Metal;
+import main.java.project.stuff.Transformable;
 
-public class Cup extends Vessel implements Containable {
+public class Can extends Vessel implements Containable {
 
-    public Cup(double volume, double diameter, int weight, Material material) {
+    public Can(double volume, double diameter, int weight, Material material) {
         super(volume, diameter, weight, material);
     }
-    public Cup() {
-        super(1.5, 1.5, 1, new Glass());
+    public Can() {
+        super(1.5, 1.5, 1, new Metal());
     }
     @Override
     public void addStuff(Transformable stuff) {
@@ -37,5 +37,3 @@ public class Cup extends Vessel implements Containable {
 
     }
 }
-
-

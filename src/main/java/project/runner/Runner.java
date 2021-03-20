@@ -1,8 +1,8 @@
-package main.java.project;
+package main.java.project.runner;
 
-import main.java.project.materials.Plastic;
-import main.java.project.vesselsTypes.Bottle;
-import main.java.project.vesselsTypes.Containable;
+import main.java.project.material.Plastic;
+import main.java.project.vessel.Bottle;
+import main.java.project.vessel.Containable;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

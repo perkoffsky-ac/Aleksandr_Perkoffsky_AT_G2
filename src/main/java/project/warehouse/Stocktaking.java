@@ -1,7 +1,6 @@
-package main.java.project;
+package main.java.project.warehouse;
 
-import main.java.project.vesselsTypes.Vessel;
-import main.java.project.vesselsTypes.VesselBox;
+import main.java.project.vessel.Vessel;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
