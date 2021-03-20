@@ -1,4 +1,4 @@
-package main.java.tasks.day7.HomeTask;
+package main.java.tasks.day7.homeTasks;
 
 import java.io.File;
 import java.io.IOException;

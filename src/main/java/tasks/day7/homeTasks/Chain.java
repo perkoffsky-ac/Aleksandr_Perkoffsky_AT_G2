@@ -1,7 +1,6 @@
-package main.java.tasks.day7.HomeTask;
+package main.java.tasks.day7.homeTasks;
 
 import java.io.*;
-import java.util.Date;
 import java.util.Random;
 
 public class Chain {
