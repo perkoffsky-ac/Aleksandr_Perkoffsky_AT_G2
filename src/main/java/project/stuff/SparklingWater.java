@@ -1,6 +1,4 @@
-package main.java.project.substance;
-
-import main.java.project.including.Bubble;
+package main.java.project.stuff;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -48,17 +46,18 @@ public class SparklingWater extends Water implements Serializable {
         checkIsOpened();
     }
     private void degas() {
-        int bubbles = this.temperature * 5 + 10;
+        int bubblesСonsignment = this.temperature * 5 + 10;
         while (this.bubbles != null && this.bubbles.size() > 0) {
             int currSize = this.bubbles.size();
-            if (currSize < bubbles) {
-                bubbles = currSize;
+            if (currSize < bubblesСonsignment) {
+                bubblesСonsignment = currSize;
             }
-            for (int i = 0; i < bubbles; i++) {
+            for (int i = 0; i < bubblesСonsignment; i++) {
                 int index = currSize - i - 1;
                 this.bubbles.get(index).burst();
             }
-            this.bubbles = new ArrayList(currSize - bubbles);
+            /*this.bubbles = new ArrayList(currSize - bubblesСonsignment);*/
+            bubbles.subList(0, bubblesСonsignment).clear();
             isSparkle();
         }
     }

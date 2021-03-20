@@ -1,6 +1,6 @@
-package main.java.project.vesselsTypes;
+package main.java.project.vessel;
 
-import main.java.project.substance.Transformable;
+import main.java.project.stuff.Transformable;
 
 public interface Containable {
 

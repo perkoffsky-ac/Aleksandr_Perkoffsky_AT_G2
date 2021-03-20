@@ -1,4 +1,6 @@
-package main.java.project.vesselsTypes;
+package main.java.project.warehouse;
+
+import main.java.project.vessel.Vessel;
 
 import java.io.Serializable;
 import java.util.ArrayList;

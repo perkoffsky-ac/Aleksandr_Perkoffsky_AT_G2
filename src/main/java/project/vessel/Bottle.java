@@ -1,14 +1,16 @@
-package main.java.project.vesselsTypes;
+package main.java.project.vessel;
 
-import main.java.project.including.Bubble;
-import main.java.project.materials.Material;
-import main.java.project.materials.Plastic;
-import main.java.project.substance.SparklingWater;
-import main.java.project.substance.Transformable;
+import main.java.project.material.Material;
+import main.java.project.material.Plastic;
+import main.java.project.stuff.Bubble;
+import main.java.project.stuff.SparklingWater;
+import main.java.project.stuff.Transformable;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Bottle extends Vessel implements Containable, Serializable {
 
@@ -20,40 +22,40 @@ public class Bottle extends Vessel implements Containable, Serializable {
         super(volume, diameter, weight, material);
         this.volume = volume;
         pumpBubbles();
-
     }
-
     public Bottle() {
         super(0.5, 2.5, 1, new Plastic());
     }
-
     public void pumpBubbles() {
         this.water.pump(this.getBubbles());
     }
-
     private List<Bubble> getBubbles() {
         double count = volume * 10000;
         System.out.println(count);
         List<Bubble> bubbleList = new ArrayList<>((int) count);
         int bound = bubbleList.size();
-        for (int i = 0; i < bound; i++) {
+
+        /*for (int i = 0; i < bound; i++) {
             bubbleList.set(i, new Bubble("carbonDioxide"));
-        }
+        }*/
+
+        bubbleList = IntStream.rangeClosed(0, (int) (count))
+                .boxed()
+                .map(i -> new Bubble("carbonDioxide"))
+                .collect(Collectors.toList());
         return bubbleList;
     }
-
     public void warm(int temperature) {
-        this.temperature = temperature;
+        stuff = stuff.stream().
+                peek(t -> t.setTemperature(temperature))
+                .collect(Collectors.toList());
     }
-
     public SparklingWater getWater() {
         return water;
     }
-
     public void setWater(SparklingWater water) {
         this.water = water;
     }
-
     @Override
     public void addStuff(Transformable stuff) {
         this.stuff.add(stuff);
@@ -72,11 +74,15 @@ public class Bottle extends Vessel implements Containable, Serializable {
     }
     @Override
     public void open() {
-        this.water.setOpened(true); //открыли бутылку
+        stuff = stuff.stream()
+                .peek(x -> x.setOpened(true))
+                .collect(Collectors.toList()); //открыли бутылку
     }
     @Override
     public void close() {
-        this.water.setOpened(false);
+        stuff = stuff.stream()
+                .peek(x -> x.setOpened(false))
+                .collect(Collectors.toList());
     }
 }
 

@@ -1,4 +1,4 @@
-package main.java.tasks.day10;
+package main.java.tasks.day10_11;
 
 @FunctionalInterface
 public interface IMyInterface {
