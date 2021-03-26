@@ -10,7 +10,7 @@ public class Can extends Vessel implements Containable {
         super(volume, diameter, weight, material);
     }
     public Can() {
-        super(1.5, 1.5, 1, new Metal());
+        super(1.5, 10.0, 1, new Metal());
     }
     @Override
     public void addStuff(Transformable stuff) {
