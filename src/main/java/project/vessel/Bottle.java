@@ -24,7 +24,7 @@ public class Bottle extends Vessel implements Containable, Serializable {
         pumpBubbles();
     }
     public Bottle() {
-        super(0.5, 2.5, 1, new Plastic());
+        super(0.5, 2.0, 1, new Plastic());
     }
     public void pumpBubbles() {
         this.water.pump(this.getBubbles());
