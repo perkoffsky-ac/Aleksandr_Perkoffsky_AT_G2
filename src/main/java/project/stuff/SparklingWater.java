@@ -54,7 +54,7 @@ public class SparklingWater extends Water implements Serializable {
             }
             for (int i = 0; i < bubblesСonsignment; i++) {
                 int index = currSize - i - 1;
-                this.bubbles.get(index).burst();
+                this.bubbles.get(index).cramp();
             }
             /*this.bubbles = new ArrayList(currSize - bubblesСonsignment);*/
             bubbles.subList(0, bubblesСonsignment).clear();
