@@ -3,65 +3,63 @@ package main.java.project.stuff;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class SparklingWater extends Water implements Serializable {
 
     private boolean isOpened;
-    private List<Bubble> bubbles = new ArrayList<>();
+    List<Bubble> bubbles = new ArrayList<>();
 
-    public SparklingWater(String color, String transparency, String smell, int temperature) {
-        super(color, transparency, smell, temperature);
+    public SparklingWater(double volume) {
+        super("no", "transparent", "no", 0);
+
+        bubbles = IntStream.rangeClosed(0, (int) (volume * 10000))
+                .boxed()
+                .map(i -> new Bubble())
+                .collect(Collectors.toList());
+        isOpened();
     }
 
-    private void checkIsOpened() {
+    @Override
+    public void setOpened(boolean isOpened) {
+        this.isOpened = isOpened;
+    }
 
-        Thread thread = new Thread() {
-
-            public void run() {
-                while (!isOpened) {
-                    System.out.println("Bottle is closed..");
-                }
+    public void isOpened() {
+        new Thread(() -> {
+            System.out.print("Degassing started");
+            while (!isOpened) {
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                try {
-                    degas();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
             }
-        };
-        thread.start();
+            degas();
+        }).start();
     }
+
     public void pump(List<Bubble> bubbles) {
         this.bubbles = bubbles;
+        System.out.println();
     }
-    public void setOpened(boolean isOpened) {
-        this.isOpened = isOpened;
-        isOpened();
-    }
-    private void isOpened() {
-        checkIsOpened();
-    }
+
     private void degas() {
-        int bubblesСonsignment = this.temperature * 5 + 10;
-        while (this.bubbles != null && this.bubbles.size() > 0) {
-            int currSize = this.bubbles.size();
-            if (currSize < bubblesСonsignment) {
-                bubblesСonsignment = currSize;
+        new Thread(() -> {
+            System.out.print("Gas come out");
+            while (bubbles.size() != 0) {
+                int bubbleСonsignment = 10 + 5 * getTemperature();
+                bubbleСonsignment = Math.min(bubbles.size(), bubbleСonsignment);
+                bubbles.stream().limit(bubbleСonsignment).forEach(Bubble::cramp);
+                bubbles.subList(0, bubbleСonsignment).clear();
+                System.out.println(bubbles.size());
             }
-            for (int i = 0; i < bubblesСonsignment; i++) {
-                int index = currSize - i - 1;
-                this.bubbles.get(index).cramp();
-            }
-            /*this.bubbles = new ArrayList(currSize - bubblesСonsignment);*/
-            bubbles.subList(0, bubblesСonsignment).clear();
-            isSparkle();
-        }
+        }).start();
+        isSparkle();
     }
+
     public boolean isSparkle() {
-        return this.bubbles != null && this.bubbles.size() > 0;
+        return bubbles != null && bubbles.size() > 0;
     }
 }
