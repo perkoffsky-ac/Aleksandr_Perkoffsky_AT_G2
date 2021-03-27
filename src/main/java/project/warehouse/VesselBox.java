@@ -1,12 +1,42 @@
 package main.java.project.warehouse;
 
+import main.java.project.vessel.Containable;
 import main.java.project.vessel.Vessel;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class VesselBox<T extends Vessel> implements Serializable {
+
+    private int capacity;
+    private String name;
+    private List<Containable> box;
+    private long id;
+
+    public VesselBox(String name, List<Containable> box) {
+        this.name = "I am box with" + " <" + capacity + "> " + "<" + name + ">";
+        this.box = box;
+        id = new Random().nextLong();
+        capacity = box.size();
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Containable> getBox() {
+        return box;
+    }
+
+    public long getId() {
+        return id;
+    }
 
     public VesselBox(T vessel, int boxQuantity) throws Exception {
 

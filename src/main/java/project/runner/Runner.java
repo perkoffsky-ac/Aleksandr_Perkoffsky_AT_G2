@@ -15,9 +15,9 @@ public class Runner {
         FileOutputStream fos = new FileOutputStream("t.tmp");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-        Containable bottle1 = new Bottle(0.5, 0.7, 2, new Plastic());
-        Containable bottle2 = new Bottle(1, 0.8, 3, new Plastic());
-        Containable bottle3 = new Bottle(1.5, 0.9, 4, new Plastic());
+        Containable bottle1 = new Bottle(0.5, 0.7, new Plastic());
+        Containable bottle2 = new Bottle(1, 0.8, new Plastic());
+        Containable bottle3 = new Bottle(1.5, 0.9, new Plastic());
         bottle1.open();
         bottle2.open();
         bottle3.open();
