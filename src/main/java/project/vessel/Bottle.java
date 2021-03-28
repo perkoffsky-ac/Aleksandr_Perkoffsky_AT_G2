@@ -1,7 +1,6 @@
 package main.java.project.vessel;
 
 import main.java.project.material.Material;
-import main.java.project.material.Plastic;
 import main.java.project.stuff.Transformable;
 
 import java.io.Serializable;
@@ -19,7 +18,7 @@ public class Bottle extends Vessel implements Containable, Serializable {
     }
 
     public Bottle() {
-        this(0.5, 2.0, new Plastic());
+        this(0.5, 2.0, Material.PLASTIC);
     }
 
     @Override

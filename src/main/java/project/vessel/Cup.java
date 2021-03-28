@@ -1,6 +1,5 @@
 package main.java.project.vessel;
 
-import main.java.project.material.Glass;
 import main.java.project.material.Material;
 import main.java.project.stuff.Transformable;
 
@@ -11,7 +10,7 @@ public class Cup extends Vessel implements Containable {
     }
 
     public Cup() {
-        this(1.5, 8.0, new Glass());
+        this(1.5, 8.0, Material.GLASS);
     }
 
     @Override

@@ -1,7 +1,6 @@
 package main.java.project.vessel;
 
 import main.java.project.material.Material;
-import main.java.project.material.Metal;
 import main.java.project.stuff.Transformable;
 
 public class Can extends Vessel implements Containable {
@@ -11,7 +10,7 @@ public class Can extends Vessel implements Containable {
     }
 
     public Can() {
-        this(1.5, 10.0, new Metal());
+        this(1.5, 10.0,Material.METAL);
     }
 
     @Override

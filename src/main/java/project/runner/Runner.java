@@ -1,6 +1,6 @@
 package main.java.project.runner;
 
-import main.java.project.material.Plastic;
+import main.java.project.material.Material;
 import main.java.project.vessel.Bottle;
 import main.java.project.vessel.Containable;
 
@@ -15,9 +15,9 @@ public class Runner {
         FileOutputStream fos = new FileOutputStream("t.tmp");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-        Containable bottle1 = new Bottle(0.5, 0.7, new Plastic());
-        Containable bottle2 = new Bottle(1, 0.8, new Plastic());
-        Containable bottle3 = new Bottle(1.5, 0.9, new Plastic());
+        Containable bottle1 = new Bottle(0.5, 0.7, Material.GLASS);
+        Containable bottle2 = new Bottle(1, 0.8, Material.METAL);
+        Containable bottle3 = new Bottle(1.5, 0.9, Material.PLASTIC);
         bottle1.open();
         bottle2.open();
         bottle3.open();
