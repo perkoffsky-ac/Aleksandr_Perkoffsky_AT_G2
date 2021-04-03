@@ -1,19 +1,27 @@
 package main.java.project.warehouse;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Stocktaking {
 
     private Stocktaking() {
     }
-/*
+
     public static void registerBox(VesselBox<?> box) {
         try (FileWriter fileWriter = new FileWriter(FILE.toFile())) {
             fileWriter.write(box.hashCode() + box.getName());
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
-    /*public static void disposeBox(VesselBox<?> box) {
+    public static void disposeBox(VesselBox<?> box) {
         try {
             BufferedReader fileReader = new BufferedReader(new FileReader(FILE.toFile()));
             List<String> temp = new ArrayList<>();
@@ -36,7 +44,7 @@ public class Stocktaking {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
 }
 
@@ -51,3 +59,8 @@ public class Stocktaking {
         System.out.print(vessel.toString());
     }*/
 
+    public static void writeVessel() {
+    }
+
+    public static void writeVessel() {
+    }

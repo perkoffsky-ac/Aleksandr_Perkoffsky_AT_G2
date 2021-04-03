@@ -1,7 +1,5 @@
 package main.java.tasks.day4;
 
-import main.java.tasks.day2.CycleTask;
-
 public class Drawing {
 
     public static void main(String[] args) {
