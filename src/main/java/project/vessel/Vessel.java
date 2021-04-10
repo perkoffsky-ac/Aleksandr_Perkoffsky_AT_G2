@@ -1,6 +1,6 @@
-package main.java.project.vessel;
+package project.vessel;
 
-import main.java.project.material.Material;
+import project.material.Material;
 
 public abstract class Vessel {
 
@@ -12,7 +12,7 @@ public abstract class Vessel {
     public Vessel(double volume, double diameter, Material material) {
         this.volume = volume;
         this.diameter = diameter;
-        this.weight = (int) (material.getDensity()*volume/4);
+        this.weight = (int) (material.getDensity() * volume / 4);
         this.material = material;
     }
 

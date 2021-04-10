@@ -1,4 +1,4 @@
-package main.java.tasks.day9;
+package tasks.day9;
 
 import java.util.ArrayList;
 
@@ -27,11 +27,11 @@ public class ExArrList {
             System.out.print(iterator.next() + " ");
         }*/
 
-        for (int i=0; i<colors.size(); i++){
+        for (int i = 0; i < colors.size(); i++) {
             System.out.print(colors.get(i) + " ");
         }
         System.out.println();
-        System.out.print(colors.get(1)+ " ");
+        System.out.print(colors.get(1) + " ");
         System.out.print(colors.get(5));
     }
 }

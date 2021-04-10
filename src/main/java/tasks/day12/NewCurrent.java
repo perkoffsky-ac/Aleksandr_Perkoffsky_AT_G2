@@ -1,4 +1,4 @@
-package main.java.tasks.day12;
+package tasks.day12;
 
 public class NewCurrent {
     static long i = 0;

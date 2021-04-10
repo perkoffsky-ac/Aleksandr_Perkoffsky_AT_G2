@@ -1,4 +1,4 @@
-package main.java.tasks.day10_11.homeTasks;
+package tasks.day10_11.homeTasks;
 
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;

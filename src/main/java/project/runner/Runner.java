@@ -1,8 +1,8 @@
-package main.java.project.runner;
+package project.runner;
 
-import main.java.project.material.Material;
-import main.java.project.vessel.Bottle;
-import main.java.project.vessel.Containable;
+import project.material.Material;
+import project.vessel.Bottle;
+import project.vessel.Containable;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

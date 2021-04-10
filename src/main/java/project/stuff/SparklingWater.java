@@ -1,4 +1,4 @@
-package main.java.project.stuff;
+package project.stuff;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.stream.IntStream;
 
 public class SparklingWater extends Water implements Serializable {
 
-    private boolean isOpened;
     List<Bubble> bubbles = new ArrayList<>();
+    private boolean isOpened;
 
     public SparklingWater(double volume) {
         super("no", "transparent", "no", 0);

@@ -1,7 +1,8 @@
-package main.java.tasks.day10_11.homeTasks;
+package tasks.day10_11.homeTasks;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 import static java.util.stream.IntStream.rangeClosed;
 
 public class CreateList {

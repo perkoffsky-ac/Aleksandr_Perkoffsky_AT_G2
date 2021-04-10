@@ -1,10 +1,11 @@
-package main.java.tasks.day6;
+package tasks.day6;
 
 public class ColorContainerRunner {
 
     public static void main(String[] args) {
 
     }
+
     private void ifColor(String color) {
         switch (color) {
             case "red":

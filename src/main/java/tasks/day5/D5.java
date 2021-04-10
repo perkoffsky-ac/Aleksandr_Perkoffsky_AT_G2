@@ -1,4 +1,4 @@
-package main.java.tasks.day5;
+package tasks.day5;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -9,8 +9,8 @@ import java.util.zip.DataFormatException;
 public class D5 {
 
     /**
-     * @
      * @param args
+     * @
      */
 
 
@@ -37,17 +37,17 @@ public class D5 {
 
     }
 
-    static class Ezh{
+    static class Ezh {
 
 
     }
 
-    static class Uzh{
+    static class Uzh {
 
 
     }
 
-    static class Mysh{
+    static class Mysh {
 
 
     }

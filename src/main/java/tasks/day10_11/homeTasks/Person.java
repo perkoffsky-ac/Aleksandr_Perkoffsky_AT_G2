@@ -1,4 +1,4 @@
-package main.java.tasks.day10_11.homeTasks;
+package tasks.day10_11.homeTasks;
 
 import java.util.Comparator;
 import java.util.List;
@@ -17,18 +17,14 @@ public class Person {
         this.surname = surname;
         this.age = age;
     }
-    public String getName() {
-        return name;
-    }
-    public String getSurname() {
-        return surname;
-    }
+
     private static List<Person> groupPeople() {
         return IntStream.rangeClosed(0, 100)
                 .mapToObj(i -> new Person("name", "surname",
-                                ThreadLocalRandom.current().nextInt(15, 30)))
+                        ThreadLocalRandom.current().nextInt(15, 30)))
                 .collect(Collectors.toList());
     }
+
     public static void main(String[] args) {
         List<String> selectList = groupPeople()
                 .stream()
@@ -39,5 +35,13 @@ public class Person {
                 .map(Person::getName)
                 .peek(System.out::println)
                 .collect(Collectors.toList());
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
     }
 }

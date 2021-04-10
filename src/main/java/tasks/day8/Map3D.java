@@ -1,4 +1,4 @@
-package main.java.tasks.day8;
+package tasks.day8;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,15 +12,15 @@ public class Map3D {
 
         Map<Integer, Map<String, List<String>>> club = new HashMap<>();
 
-        List<String> group1= new ArrayList<>();
+        List<String> group1 = new ArrayList<>();
         group1.add("Vasia");
         group1.add("Kola");
 
-        List<String> group2= new ArrayList<>();
+        List<String> group2 = new ArrayList<>();
         group2.add("Sveta");
         group2.add("Masha");
 
-        List<String> group3= new ArrayList<>();
+        List<String> group3 = new ArrayList<>();
         group3.add("Petya");
         group3.add("Dasha");
 

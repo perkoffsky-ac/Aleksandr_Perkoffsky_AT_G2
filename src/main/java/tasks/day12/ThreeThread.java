@@ -1,6 +1,6 @@
-package main.java.tasks.day12;
+package tasks.day12;
 
-import static main.java.tasks.day12.HMethod.heavyMethod;
+import static tasks.day12.HMethod.heavyMethod;
 
 public class ThreeThread {
 

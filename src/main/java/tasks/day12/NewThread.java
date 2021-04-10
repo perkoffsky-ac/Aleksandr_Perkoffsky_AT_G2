@@ -1,4 +1,4 @@
-package main.java.tasks.day12;
+package tasks.day12;
 
 public class NewThread {
 
@@ -24,7 +24,7 @@ public class NewThread {
         }).start();
 
         Thread.sleep(1000);
-        
+
         syncMethod("m");
 
         synchronized (lock) {
@@ -36,12 +36,12 @@ public class NewThread {
     }
 
     private static synchronized void syncMethod(String threadName) {
-        for (int i = 0; i<3; i++){
-            try{
+        for (int i = 0; i < 3; i++) {
+            try {
                 Thread.currentThread().sleep(1000);
             } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+                e.printStackTrace();
+            }
             System.out.printf("%s-%s ", threadName, i);
         }
     }

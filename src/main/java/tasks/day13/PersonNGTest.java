@@ -1,4 +1,4 @@
-/*import main.java.tasks.day10_11.homeTasks.Person;
+/*import main.java.main.java.tasks.day10_11.homeTasks.Person;
 import org.testng.annotations.*;
 
 import static org.testng.AssertJUnit.*;

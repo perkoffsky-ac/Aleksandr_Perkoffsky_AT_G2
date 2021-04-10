@@ -1,4 +1,4 @@
-package main.java.tasks.day10_11;
+package tasks.day10_11;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -33,11 +33,11 @@ public class Runner {
 
         list.stream()
                 .sorted((person1, person2) -> {
-                    if (person1.sex != person2.sex){
+                    if (person1.sex != person2.sex) {
                         return person1.sex.compareTo(person2.sex);
                     }
                     return person1.age - person2.age;
-                }).peek(person-> System.out.println(person.name))
+                }).peek(person -> System.out.println(person.name))
 
                 .collect(Collectors.toList());
 

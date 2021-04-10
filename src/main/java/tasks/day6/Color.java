@@ -1,13 +1,13 @@
-package main.java.tasks.day6;
+package tasks.day6;
 
 public class Color {
 
     private String color;
     private int hex;
 
-    public Color(String color, int hex){
-        this.color=color;
-        this.hex=hex;
+    public Color(String color, int hex) {
+        this.color = color;
+        this.hex = hex;
     }
 
     public String getColor() {

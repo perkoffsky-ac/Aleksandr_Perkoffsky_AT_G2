@@ -1,4 +1,4 @@
-package main.java.tasks.day4;
+package tasks.day4;
 
 public class Drawing {
 

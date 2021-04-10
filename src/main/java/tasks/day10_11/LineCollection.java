@@ -1,4 +1,4 @@
-package main.java.tasks.day10_11;
+package tasks.day10_11;
 
 import java.util.Arrays;
 import java.util.List;

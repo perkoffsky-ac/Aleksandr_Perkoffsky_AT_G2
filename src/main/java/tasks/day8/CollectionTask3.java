@@ -1,4 +1,4 @@
-package main.java.tasks.day8;
+package tasks.day8;
 
 import java.util.HashSet;
 import java.util.Iterator;

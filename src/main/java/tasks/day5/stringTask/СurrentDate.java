@@ -1,4 +1,5 @@
-package main.java.tasks.day5.stringTask;
+package tasks.day5.stringTask;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

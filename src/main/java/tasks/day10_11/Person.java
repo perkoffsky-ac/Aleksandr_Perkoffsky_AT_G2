@@ -1,18 +1,19 @@
-package main.java.tasks.day10_11;
+package tasks.day10_11;
 
 public class Person {
     public String name;
-    public  int age;
+    public int age;
     public Sex sex;
 
-    public Person(String name, int age, Sex sex){
-        this.name=name;
-        this.age=age;
-        this.sex=sex;
+    public Person(String name, int age, Sex sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
 
 
     }
-    public enum Sex{
+
+    public enum Sex {
         Man, Women
     }
 

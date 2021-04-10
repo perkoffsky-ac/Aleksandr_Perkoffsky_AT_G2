@@ -1,4 +1,4 @@
-package main.java.tasks.day4;
+package tasks.day4;
 
 import java.util.Random;
 
@@ -18,7 +18,7 @@ public class СurrMonth {
 
         for (i = 0; i < array.length; i++) {
 
-            if(array[i] % n == 0)
+            if (array[i] % n == 0)
 
                 array[i] = random.nextInt(55);
             int sum = 0;

@@ -1,7 +1,7 @@
-package main.java.project.warehouse;
+package project.warehouse;
 
-import main.java.project.vessel.Containable;
-import main.java.project.vessel.Vessel;
+import project.vessel.Containable;
+import project.vessel.Vessel;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -22,6 +22,18 @@ public class VesselBox<T extends Vessel> implements Serializable {
         capacity = box.size();
     }
 
+    public VesselBox(T vessel, int boxQuantity) throws Exception {
+
+        if (boxQuantity != 9 && boxQuantity != 25 && boxQuantity != 36) {
+            throw new Exception("This amount is not allowed");
+        }
+        ArrayList<Vessel> boxes = new ArrayList<>(boxQuantity);
+        for (int i = 0; i < boxQuantity; i++) {
+            boxes.add(vessel);
+        }
+        printContentsBox((List<T>) boxes);
+    }
+
     public int getCapacity() {
         return capacity;
     }
@@ -38,17 +50,6 @@ public class VesselBox<T extends Vessel> implements Serializable {
         return id;
     }
 
-    public VesselBox(T vessel, int boxQuantity) throws Exception {
-
-        if (boxQuantity != 9 && boxQuantity != 25 && boxQuantity != 36) {
-            throw new Exception("This amount is not allowed");
-        }
-        ArrayList<Vessel> boxes = new ArrayList<>(boxQuantity);
-        for (int i = 0; i < boxQuantity; i++) {
-            boxes.add(vessel);
-        }
-        printContentsBox((List<T>) boxes);
-    }
     private void printContentsBox(List<T> vessels) {
 
         for (T vessel : vessels) {

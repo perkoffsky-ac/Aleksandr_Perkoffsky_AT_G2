@@ -1,4 +1,4 @@
-package main.java.project.warehouse;
+/*package main.java.project.warehouse;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,7 +11,8 @@ import java.util.List;
 public class Stocktaking {
 
     private Stocktaking() {
-    }
+    }*/
+/*
 
     public static void registerBox(VesselBox<?> box) {
         try (FileWriter fileWriter = new FileWriter(FILE.toFile())) {
@@ -31,24 +32,25 @@ public class Stocktaking {
                 if (!line1.equals(line2)) {
                     temp.add(line1);
 
-    }
+                }
 
-    private static final Path FILE = Path.of("file.txt");
-    public static void getInfo() {
-        try {
-            BufferedReader fileReader = new BufferedReader(new FileReader(FILE.toFile()));
-            while (fileReader.ready()) {
-                String line = fileReader.readLine();
-                System.out.println(line);
+                private static final Path FILE = Path.of("file.txt");
+                public static void getInfo () {
+                    try {
+                        BufferedReader fileReader = new BufferedReader(new FileReader(FILE.toFile()));
+                        while (fileReader.ready()) {
+                            String line = fileReader.readLine();
+                            System.out.println(line);
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
-}
-
-    /*public static void writeVessel(VesselBox<Vessel> vessel) throws Exception {
+    */
+/*public static void writeVessel(VesselBox<Vessel> vessel) throws Exception {
         FileOutputStream fos = new FileOutputStream("VesselBox.txt");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
@@ -57,10 +59,11 @@ public class Stocktaking {
         fos.close();
 
         System.out.print(vessel.toString());
-    }*/
+    }*//*
 
-    public static void writeVessel() {
-    }
 
-    public static void writeVessel() {
-    }
+            public static void writeVessel () {
+            }
+
+            public static void writeVessel () {
+            }*/

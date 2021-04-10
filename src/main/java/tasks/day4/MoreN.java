@@ -1,4 +1,4 @@
-package main.java.tasks.day4;
+package tasks.day4;
 
 import java.util.Random;
 
@@ -18,7 +18,7 @@ public class MoreN {
 
         for (i = array.length - 1; i >= 0; i--) {
 
-            if(i > n)
+            if (i > n)
 
                 array[i] = random.nextInt(55);
 

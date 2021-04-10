@@ -1,10 +1,10 @@
-package main.java.project.warehouse;
+/*package project.warehouse;
 
-import main.java.project.material.Material;
-import main.java.project.stuff.SparklingWater;
-import main.java.project.stuff.Transformable;
-import main.java.project.stuff.Water;
-import main.java.project.vessel.Bottle;
+import project.material.Material;
+import project.stuff.SparklingWater;
+import project.stuff.Transformable;
+import project.stuff.Water;
+import project.vessel.Bottle;
 
 public class Factory {
 
@@ -22,4 +22,4 @@ public class Factory {
         }
 
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package main.java.tasks.day7;
+package tasks.day7;
 
 import java.io.*;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class ReaderSample {
             String incoming = scanner.nextLine();
             System.out.println("Lust got '%s', incoming");*/
 
-       read();
+        read();
         /*write();*/
     }
 

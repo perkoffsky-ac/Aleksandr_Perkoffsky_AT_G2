@@ -1,4 +1,4 @@
-package main.java.project.warehouse;
+/*package main.java.project.warehouse;
 
 import main.java.project.vessel.Bottle;
 import main.java.project.vessel.Cup;
@@ -11,7 +11,15 @@ public class Warehouse {
 
     private Map<Integer, VesselBox<?>> stock = new HashMap<>();
 
-   public void addBox(VesselBox<?> box) {
+    public static void main(String[] args) throws Exception {
+        VesselBox<Vessel> box1 = new VesselBox<>(new Cup(), 9);
+        VesselBox<Vessel> box2 = new VesselBox<>(new Bottle(), 36);
+
+        Stocktaking.writeVessel(box1);
+        Stocktaking.writeVessel(box2);
+    }
+
+    public void addBox(VesselBox<?> box) {
         Stocktaking.registerBox(box);
         stock.put(box.hashCode(), box);
     }
@@ -24,12 +32,4 @@ public class Warehouse {
         Stocktaking.disposeBox(stock.get(id));
         stock.remove(id);
     }
-
-    public static void main(String[] args) throws Exception {
-        VesselBox<Vessel> box1 = new VesselBox<>(new Cup(), 9);
-        VesselBox<Vessel> box2 = new VesselBox<>(new Bottle(), 36);
-
-        Stocktaking.writeVessel(box1);
-        Stocktaking.writeVessel(box2);
-    }
-}
+}*/

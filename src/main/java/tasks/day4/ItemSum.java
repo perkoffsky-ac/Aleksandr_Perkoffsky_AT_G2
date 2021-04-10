@@ -1,4 +1,4 @@
-package main.java.tasks.day4;
+package tasks.day4;
 
 import java.util.Random;
 
@@ -18,12 +18,12 @@ public class ItemSum {
 
         for (i = 0; i < array.length; i++) {
 
-            if(array[i] % n == 0)
+            if (array[i] % n == 0)
 
-            array[i] = random.nextInt(55);
+                array[i] = random.nextInt(55);
             int sum = 0;
 
-            sum+=array[i];
+            sum += array[i];
 
             System.out.print(" " + sum + " ");
 

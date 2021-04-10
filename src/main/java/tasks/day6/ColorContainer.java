@@ -1,4 +1,4 @@
-package main.java.tasks.day6;
+package tasks.day6;
 
 public class ColorContainer {
 

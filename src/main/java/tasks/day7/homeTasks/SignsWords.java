@@ -1,4 +1,4 @@
-package main.java.tasks.day7.homeTasks;
+package tasks.day7.homeTasks;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,7 +8,7 @@ public class SignsWords {
 
     public static void main(String[] args) throws Exception {
 
-       File file1 = new File("file.txt");
+        File file1 = new File("file.txt");
         Scanner scanner = new Scanner(new FileInputStream(file1));
 
         int count = 0;

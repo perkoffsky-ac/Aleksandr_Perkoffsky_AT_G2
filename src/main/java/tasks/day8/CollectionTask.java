@@ -1,4 +1,4 @@
-package main.java.tasks.day8;
+package tasks.day8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class CollectionTask {
             System.out.println(lineAdd2);
         }
 
-        for (int i = 0; i < myList.size(); i++){
+        for (int i = 0; i < myList.size(); i++) {
             System.out.println(myList.get(i));
         }
     }

@@ -1,4 +1,4 @@
-package main.java.tasks.day7.homeTasks;
+package tasks.day7.homeTasks;
 
 import java.util.Scanner;
 

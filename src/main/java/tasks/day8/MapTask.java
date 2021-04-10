@@ -1,6 +1,6 @@
-package main.java.tasks.day8;
+package tasks.day8;
 
-import main.java.tasks.day5.stringTask.LogTask;
+import tasks.day5.stringTask.LogTask;
 
 import java.util.HashMap;
 import java.util.Map;

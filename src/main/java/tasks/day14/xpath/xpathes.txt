@@ -1,0 +1,76 @@
+Spartak
+1)
+//ul[@id="main-nav"]//a[text()="Главная"]
+//ul[@id="main-nav"]//a[text()="О компании"]/../preceding-sibling::li/a
+2)
+//ul[@id="main-nav"]//a[text() = "Партнерам"]
+//ul[@id="main-nav"]//a[contains(@href, "partners")]
+3)
+//button[@id="user-auth-menu"]/img
+//img[@src = "/local/templates/spartak/images/user-icon.png"]
+4) "Ch" -                   
+//a[text() = "Ch"]
+//a[contains(@href, "language=ch")]
+5)
+//a[@id="bx_290038399_44"]
+//div[@class = "main-logo-icons-wrap"]//a[contains(@href, "/catalog/konfety/")]
+6)
+//a[@id="bx_290038399_47"]/img
+//a[@id="bx_290038399_47"]//child::img
+7)
+//img[@src="/local/templates/spartak/images/user-icon.png"]
+//button[@id="user-auth-menu"]//img
+8)
+//h2[text() = "О компании"]
+//section[@class="main-about"]//h2[text()="О компании"]
+9)
+//span//i[@class="fa fa-vk"]
+//a[@class="social-button"]//i[@class="fa fa-vk"]
+10)
+//a[@class="social-button"]//i[@class="fa fa-youtube"]
+//span//i[@class="fa fa-youtube"]
+11)
+//img[@id="bx_290038399_36"]
+//div[@class="main-logo"]/img
+Mail.ru
+1)
+//a[contains(@href, "my.mail.ru/?from")]
+//a[text()="Мой Мир"]
+2)
+//div[@class="ph-project ph-project__all-projects svelte-pktadz"]
+//div[@class="ph-projects svelte-pktadz"]//child::div
+3)
+//div[@id="search__categories"]/a[3]
+//a[text()="Картинки"]
+4)
+//form[@id="search"]/label[1]
+//label[@class="search__icon svelte-6s275p"]
+5)
+//button[@id="search:submit"]
+//button[text()="Найти"]
+6)
+//button[@class="button svelte-1eyrl7y"]
+//div[@id="mailbox"]/form/button[1]
+7)
+//a[@title="Облако"]
+//div[@class="icons svelte-k8prj"]//a[2]
+8)
+//div[@class="domain-text__wrapper svelte-1eyrl7y"]/following-sibling::select
+9)
+//div[@class="footer svelte-fmoypq"]/a
+//a[@href="https://e.mail.ru/signup?from=main&rf=auth.mail.ru"]
+10)
+//li[@id="asteroid-ok"]//a
+//div[text()="Одноклассники"]/../..
+11)
+//a[text()="Леди"]
+//a[@href="//lady.mail.ru/"]
+12)
+//a[text()="Регистрация"]
+//div[@class="ph-auth svelte-19vjv6r"]/a
+13)
+//div[@class="grid__ccol i-pull-left svelte-1fnydfu"]//li[2]
+//div[@class="grid__ccol i-pull-left svelte-1fnydfu"]//child::li[2]
+14)
+//i[@class="rate__icon rate__icon_rub svelte-4pzqt9"]
+//div[@class="rates svelte-1pstwcs"]/a[2]

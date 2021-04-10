@@ -1,4 +1,4 @@
-package main.java.tasks.day12;
+package tasks.day12;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

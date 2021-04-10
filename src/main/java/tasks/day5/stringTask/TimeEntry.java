@@ -1,4 +1,4 @@
-package main.java.tasks.day5.stringTask;
+package tasks.day5.stringTask;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
