@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class SeleniumTest10 {
+public class HotelRating {
 
     static WebDriver driver = new ChromeDriver();
 
