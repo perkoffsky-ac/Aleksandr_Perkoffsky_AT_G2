@@ -12,10 +12,6 @@ public class SeleniumTest2 {
 
     public static void main(String[] args) throws MalformedURLException {
 
-        /*RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:9515"), new ChromeOptions());*/
-
-        /*System.setProperty("webdriver.chrome.driver", "c:\\ChromeDriver\\chromedriver.exe");*/
-
         driver.get("http://google.com");
         driver.findElement(By.xpath("//*[@name='q']")).sendKeys("погода Минск");
         driver.findElement(By.xpath("//*[@name='q']")).submit();
