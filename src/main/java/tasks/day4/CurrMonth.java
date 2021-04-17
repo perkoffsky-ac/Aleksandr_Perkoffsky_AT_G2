@@ -2,7 +2,7 @@ package tasks.day4;
 
 import java.util.Random;
 
-public class СurrMonth {
+public class CurrMonth {
 
     public static void main(String[] args) {
 

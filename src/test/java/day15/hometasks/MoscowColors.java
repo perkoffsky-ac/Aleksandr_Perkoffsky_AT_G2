@@ -39,7 +39,4 @@ public class MoscowColors {
         driver.close();
     }
 
-    public static void main(String[] args) {
-
-    }
 }

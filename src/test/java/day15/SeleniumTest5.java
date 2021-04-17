@@ -18,7 +18,7 @@ public class SeleniumTest5 {
     static WebDriver driver = new ChromeDriver();
 
     @Before
-    public void filterHotels() throws InterruptedException {
+    public void filterHotels() {
         Actions make = new Actions(driver);
         WebElement nameField;
         driver.get("https://www.w3schools.com/java/");
@@ -48,17 +48,11 @@ public class SeleniumTest5 {
             return webElement.findElement(By.xpath("//em"))
                     .getText().equalsIgnoreCase("tutorial");
         });
-
         Assert.assertTrue(allTut);
-
     }
 
     @After
     public void completionTest() {
         driver.close();
-    }
-
-    public static void main(String[] args) throws InterruptedException {
-
     }
 }

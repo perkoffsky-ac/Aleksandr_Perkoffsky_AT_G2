@@ -1,35 +1,27 @@
-package day15.hometasks;
+package day17;
 
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class LanguageCurrency {
+public class LanguageCurrency1 extends BaseSteps {
 
-    static WebDriver driver = new ChromeDriver();
     Actions actions = new Actions(driver);
     String toolTip1 = "Выберите валюту";
     String toolTip2 = "Выберите язык";
 
-    @Before
-    public void cursorHover() {
-
+    @Test
+    public void valueCheck1() {
         driver.get("http://booking.com");
         WebElement element1 = driver.findElement(By.xpath("//*[@class='bui-button__text']"));
         actions.moveToElement(element1);
         actions.perform();
-    }
-
-    @Test
-    public void valueCheck1() {
         String toolTip3 = driver.findElement(By
                 .xpath("//*[@class='bui-button bui-button--light bui-button--large']"))
                 .getAttribute("data-modal-aria-label");
         Assert.assertEquals("Strings are not the same1", toolTip1, toolTip3);
-
     }
 
     @Test
@@ -41,12 +33,5 @@ public class LanguageCurrency {
                 .xpath("//*[@data-modal-id='language-selection']"))
                 .getAttribute("data-tooltip-text");
         Assert.assertEquals("Strings are not the same2", toolTip2, toolTip4);
-        driver.close();
     }
-
-    @After
-    public void completionTest() {
-
-    }
-
 }

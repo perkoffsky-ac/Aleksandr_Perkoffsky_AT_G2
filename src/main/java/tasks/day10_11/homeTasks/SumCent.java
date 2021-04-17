@@ -3,7 +3,7 @@ package tasks.day10_11.homeTasks;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 
-public class SumСent {
+public class SumCent {
 
     public static void main(String[] args) {
         double СentList = IntStream.rangeClosed(1, 20)
