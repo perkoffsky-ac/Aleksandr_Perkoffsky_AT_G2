@@ -7,7 +7,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-
 public class ChoiceLists {
 
     static WebDriver driver = new ChromeDriver();

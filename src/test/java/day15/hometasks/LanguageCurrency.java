@@ -11,8 +11,8 @@ public class LanguageCurrency {
 
     static WebDriver driver = new ChromeDriver();
     Actions actions = new Actions(driver);
-    String toolTip1 = "Выберите валюту";
-    String toolTip2 = "Выберите язык";
+    private final String toolTip1 = "Выберите валюту"; // константа + private!!!
+    private final String toolTip2 = "Выберите язык"; // константа + private!!!
 
     @Before
     public void cursorHover() {
@@ -40,7 +40,7 @@ public class LanguageCurrency {
         String toolTip4 = driver.findElement(By
                 .xpath("//*[@data-modal-id='language-selection']"))
                 .getAttribute("data-tooltip-text");
-        Assert.assertEquals("Strings are not the same2", toolTip2, toolTip4);
+        Assert.assertEquals("Strings are not the same2", toolTip2, toolTip4); //тул типы назвать нормально " toolTip2expected"
         driver.close();
     }
 

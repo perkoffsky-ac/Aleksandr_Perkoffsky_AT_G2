@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HotelAvailability {
 
-    static WebDriver driver = new ChromeDriver();
+    WebDriver driver = new ChromeDriver();
     WebDriverWait wait = new WebDriverWait(driver, 10);
     WebElement webElement;
 
