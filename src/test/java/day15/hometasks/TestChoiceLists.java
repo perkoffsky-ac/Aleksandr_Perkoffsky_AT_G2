@@ -3,11 +3,14 @@ package day15.hometasks;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ChoiceLists {
+public class TestChoiceLists {
 
     static WebDriver driver = new ChromeDriver();
     Actions make = new Actions(driver);
@@ -47,7 +50,7 @@ public class ChoiceLists {
 
     }
 
-    @After
+   @After
     public void completionTest() {
         driver.close();
     }

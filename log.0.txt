@@ -1,0 +1,15 @@
+апр. 25, 2021 2:32:44 pm day19.DefaultLogging main SEVERE: Сообщение с уровнем SEVERE
+апр. 25, 2021 2:32:44 pm day19.DefaultLogging main WARNING: Сообщение с уровнем WARNING
+апр. 25, 2021 2:32:44 pm day19.DefaultLogging main INFO: Сообщение с уровнем INFO
+апр. 25, 2021 2:32:44 pm day19.DefaultLogging main CONFIG: Сообщение с уровнем CONFIG
+апр. 25, 2021 2:32:44 pm day19.DefaultLogging main FINE: Сообщение с уровнем FINE
+апр. 25, 2021 2:36:42 pm day19.DefaultLogging main SEVERE: Сообщение с уровнем SEVERE
+апр. 25, 2021 2:36:42 pm day19.DefaultLogging main WARNING: Сообщение с уровнем WARNING
+апр. 25, 2021 2:36:42 pm day19.DefaultLogging main INFO: Сообщение с уровнем INFO
+апр. 25, 2021 2:36:42 pm day19.DefaultLogging main CONFIG: Сообщение с уровнем CONFIG
+апр. 25, 2021 2:36:42 pm day19.DefaultLogging main FINE: Сообщение с уровнем FINE
+апр. 25, 2021 2:39:10 pm day19.DefaultLogging main SEVERE: Сообщение с уровнем SEVERE
+апр. 25, 2021 2:39:10 pm day19.DefaultLogging main WARNING: Сообщение с уровнем WARNING
+апр. 25, 2021 2:39:10 pm day19.DefaultLogging main INFO: Сообщение с уровнем INFO
+апр. 25, 2021 2:39:10 pm day19.DefaultLogging main CONFIG: Сообщение с уровнем CONFIG
+апр. 25, 2021 2:39:10 pm day19.DefaultLogging main FINE: Сообщение с уровнем FINE

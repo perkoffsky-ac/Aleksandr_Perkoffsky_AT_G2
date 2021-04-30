@@ -13,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
-public class SeleniumTest5 {
+public class TestSearchingResults {
 
     static WebDriver driver = new ChromeDriver();
 

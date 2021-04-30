@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SeleniumTest4 {
+public class TestPrice {
 
     static WebDriver driver = new ChromeDriver();
     WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -22,8 +22,8 @@ public class SeleniumTest4 {
         driver.get("http://booking.com");
         driver.findElement(By.xpath("//*[@name='ss']")).sendKeys("Париж");
         driver.findElement(By.xpath("//*[@data-calendar2-title='Приезжаю']")).click();
-        driver.findElement(By.xpath("//*[@aria-label='21 Апрель 2021']")).click();
-        driver.findElement(By.xpath("//*[@aria-label='28 Апрель 2021']")).click();
+        driver.findElement(By.xpath("//*[@data-date='2021-05-06']")).click();
+        driver.findElement(By.xpath("//*[@data-date='2021-05-15']")).click();
         driver.findElement(By.xpath("//*[@class='xp__guests__count']")).click();
         driver.findElement(By.xpath("//*[@aria-label='Взрослых: увеличить количество']")).click();
         driver.findElement(By.xpath("//*[@aria-label='Взрослых: увеличить количество']")).click();
@@ -53,9 +53,9 @@ public class SeleniumTest4 {
         Assert.assertTrue(priceWeek / 7 > priceNight);
     }
 
-    @After
+    /*@After
     public void completionTest() {
         driver.close();
-    }
+    }*/
 }
 

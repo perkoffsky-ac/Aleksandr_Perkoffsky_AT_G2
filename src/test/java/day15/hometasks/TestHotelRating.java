@@ -11,9 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.numberOfWindowsToBe;
 
-public class HotelRating {
+public class TestHotelRating {
 
     static WebDriver driver = new ChromeDriver();
     WebDriverWait wait=new WebDriverWait(driver,10);
@@ -21,7 +22,7 @@ public class HotelRating {
 
     @Before
     public void filterHotels() throws InterruptedException {
-        Actions make = new Actions(driver);
+
         driver.get("http://booking.com");
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//*[@name='ss']")).sendKeys("Москва");

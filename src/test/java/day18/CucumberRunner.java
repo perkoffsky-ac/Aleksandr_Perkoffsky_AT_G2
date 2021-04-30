@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty","summary"},
+        plugin = {"pretty","summary"}, //те пакеты где есть гивен, вен, then, before, after
         glue = {"day18"},
         features = {"src/test/resources/features/my.feature"},
         strict = true)

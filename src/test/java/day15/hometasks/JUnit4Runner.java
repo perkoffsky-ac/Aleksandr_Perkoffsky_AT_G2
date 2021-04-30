@@ -1,20 +1,20 @@
 package day15.hometasks;
 
-import day15.SeleniumTest4;
-import day15.SeleniumTest5;
+import day15.TestPrice;
+import day15.TestSearchingResults;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-        SeleniumTest4.class,
-        SeleniumTest5.class,
-        MoscowColors.class,
-        ChoiceLists.class,
-        LanguageCurrency.class,
-        HotelAvailability.class,
-        HotelRating.class
+        TestPrice.class,
+        TestSearchingResults.class,
+        TestMoscowColors.class,
+        TestChoiceLists.class,
+        TestLanguageCurrency.class,
+        TestHotelAvailability.class,
+        TestHotelRating.class
 
 })
 
