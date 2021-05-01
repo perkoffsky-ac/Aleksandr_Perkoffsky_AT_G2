@@ -1,15 +1,9 @@
 package project.utils;
 
-import org.openqa.selenium.WebDriver;
-import project.driver.Driver;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
 public class SelectDateUtil {
-
-    WebDriver driver = Driver.getDriver();
-    Date date = new Date();
 
     public static String getCurrentDate() {
         return new SimpleDateFormat("yyyy-MM-dd")

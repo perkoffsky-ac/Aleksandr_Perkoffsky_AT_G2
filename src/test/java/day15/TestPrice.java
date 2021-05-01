@@ -53,9 +53,9 @@ public class TestPrice {
         Assert.assertTrue(priceWeek / 7 > priceNight);
     }
 
-    /*@After
+    @After
     public void completionTest() {
         driver.close();
-    }*/
+    }
 }
 

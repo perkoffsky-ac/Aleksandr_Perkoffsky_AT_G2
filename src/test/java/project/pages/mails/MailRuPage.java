@@ -1,15 +1,18 @@
 package project.pages.mails;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import project.L4JLogging;
 import project.driver.Driver;
 
 public class MailRuPage {
 
     WebDriver driver = Driver.getDriver();
     WebDriverWait wait = new WebDriverWait(driver, 10);
+    private static final Logger LOGGER = Logger.getLogger(L4JLogging.class.getName());
 
     public MailRuPage(WebDriver driver) {
         this.driver = driver;

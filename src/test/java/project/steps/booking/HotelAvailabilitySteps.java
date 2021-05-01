@@ -4,9 +4,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import project.L4JLogging;
 import project.driver.Driver;
 import project.pages.booking.HomePage;
 import project.pages.booking.ResultPage;
@@ -16,13 +17,12 @@ public class HotelAvailabilitySteps {
     WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage(driver);
     ResultPage resultPage = new ResultPage(driver);
-    WebDriverWait wait = new WebDriverWait(driver, 10);
+    private static final Logger LOGGER = Logger.getLogger(L4JLogging.class.getName());
 
     @Given("I open a site")
     public void openSite() {
         String url = "http://booking.com";
         homePage.openHomePage(url);
-        System.out.println("Opening url " + url);
     }
 
     @When("I type {string} as name of the city")

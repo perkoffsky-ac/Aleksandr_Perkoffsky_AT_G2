@@ -1,10 +1,12 @@
 package project.pages.booking;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import project.L4JLogging;
 import project.driver.Driver;
 
 import static project.utils.SelectDateUtil.*;
@@ -13,6 +15,7 @@ public class HomePage {
 
     WebDriver driver = Driver.getDriver();
     Actions actions = new Actions(driver);
+    private static final Logger LOGGER = Logger.getLogger(L4JLogging.class.getName());
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

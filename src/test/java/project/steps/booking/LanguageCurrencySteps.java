@@ -3,19 +3,18 @@ package project.steps.booking;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import project.L4JLogging;
 import project.driver.Driver;
 import project.pages.booking.HomePage;
-import project.pages.booking.ResultPage;
 
 public class LanguageCurrencySteps {
 
     WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage(driver);
-    ResultPage resultPage = new ResultPage(driver);
-    WebDriverWait wait = new WebDriverWait(driver, 10);
+    private static final Logger LOGGER = Logger.getLogger(L4JLogging.class.getName());
 
     private final String currencySelection = "Выберите валюту";
     private final String languageSelection = "Выберите язык";

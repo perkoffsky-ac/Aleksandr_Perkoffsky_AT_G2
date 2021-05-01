@@ -1,9 +1,11 @@
 package project.pages.booking;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import project.L4JLogging;
 import project.driver.Driver;
 import project.utils.ParsingUtil;
 
@@ -14,6 +16,7 @@ public class ResultPage {
     WebDriver driver = Driver.getDriver();
     WebDriverWait wait = new WebDriverWait(driver, 10);
     Actions actions = new Actions(driver);
+    private static final Logger LOGGER = Logger.getLogger(L4JLogging.class.getName());
 
     public ResultPage(WebDriver driver) {
         this.driver = driver;
@@ -27,6 +30,7 @@ public class ResultPage {
 
     public void highestPrice() {
         referringToSpecificElement("//a[@data-id = 'pri-5']");
+
     }
 
     public void sortingLowestPrice() {

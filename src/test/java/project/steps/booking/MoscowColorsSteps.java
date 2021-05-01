@@ -4,9 +4,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import project.L4JLogging;
 import project.driver.Driver;
 import project.pages.booking.HomePage;
 import project.pages.booking.ResultPage;
@@ -16,7 +17,7 @@ public class MoscowColorsSteps {
     WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage(driver);
     ResultPage resultPage = new ResultPage(driver);
-    WebDriverWait wait = new WebDriverWait(driver, 10);
+    private static final Logger LOGGER = Logger.getLogger(L4JLogging.class.getName());
 
     private final String redColor = "rgba(255, 0, 0, 1)";
 
